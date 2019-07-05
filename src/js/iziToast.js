@@ -875,6 +875,8 @@
 				
 				if(settings.iconText){
 					$DOM.icon.appendChild(document.createTextNode(settings.iconText));
+				} else if(settings.iconNode){
+					$DOM.icon.appendChild(settings.iconNode);
 				}
 				
 				if(settings.iconColor){
